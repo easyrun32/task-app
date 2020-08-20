@@ -1,0 +1,10 @@
+version: 2
+# https://circleci.com/signup/
+# You can sign up with github
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "A first hello"
