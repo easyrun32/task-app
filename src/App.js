@@ -2,8 +2,9 @@ import Data from "./data.js";
 import React, { Component } from "react";
 import Column from "./component/column/column.component";
 import { DragDropContext } from "react-beautiful-dnd";
-export default class App extends Component {
+export class App extends Component {
   state = Data;
+
   /*
     OnDragStart when the drag first starts
     OnDragUpdate when something changes
@@ -14,7 +15,7 @@ export default class App extends Component {
    */
   onDragEnd = (result) => {
     const { destination, source, draggableId } = result;
-    console.log(result);
+
     if (!destination) {
       console.log("where ya going");
       return;
@@ -62,6 +63,7 @@ export default class App extends Component {
     //   console.log(tasks);
     //   console.log(column.id);
     // });
+
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
         {this.state.columnOrder.map((columnId) => {
@@ -76,3 +78,4 @@ export default class App extends Component {
     );
   }
 }
+export default App;

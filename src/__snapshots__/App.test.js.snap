@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<DragDropContext
+  onDragEnd={[Function]}
+>
+  <Column
+    column={
+      Object {
+        "id": "column-1",
+        "taskIds": Array [
+          "task-1",
+          "task-2",
+        ],
+        "title": "To Do",
+      }
+    }
+    key="column-1"
+    tasks={
+      Array [
+        Object {
+          "content": "i am task-1",
+          "id": "task-1",
+        },
+        Object {
+          "content": "i am task-2",
+          "id": "task-2",
+        },
+      ]
+    }
+  />
+</DragDropContext>
+`;
