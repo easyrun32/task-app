@@ -65,18 +65,16 @@ export class App extends Component {
     // });
 
     return (
-      <div>
-        <DragDropContext onDragEnd={this.onDragEnd}>
-          {this.state.columnOrder.map((columnId) => {
-            const column = this.state.columns[columnId];
-            const tasks = column.taskIds.map(
-              (taskId) => this.state.tasks[taskId]
-            );
+      <DragDropContext onDragEnd={this.onDragEnd}>
+        {this.state.columnOrder.map((columnId) => {
+          const column = this.state.columns[columnId];
+          const tasks = column.taskIds.map(
+            (taskId) => this.state.tasks[taskId]
+          );
 
-            return <Column key={column.id} column={column} tasks={tasks} />;
-          })}
-        </DragDropContext>
-      </div>
+          return <Column key={column.id} column={column} tasks={tasks} />;
+        })}
+      </DragDropContext>
     );
   }
 }
