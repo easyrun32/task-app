@@ -7,6 +7,7 @@
     "enzyme-adapter-react-16": "^1.15.3",
     "enzyme-to-json": "^3.5.0",
     "husky": "^4.2.5",
+    "prettier": "^2.1.0",
     "pretty-quick": "^3.0.0",
     "react": "^16.13.1",
     "react-beautiful-dnd": "^13.0.0",
@@ -17,7 +18,6 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "prettier": "2.1.0",
     "react-scripts": "3.0.0"
   },
   "resolutions": {
