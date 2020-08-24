@@ -28,6 +28,11 @@
       "enzyme-to-json/serializer"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
