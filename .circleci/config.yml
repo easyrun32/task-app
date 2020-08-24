@@ -22,9 +22,12 @@ jobs:
     #Anything within package.json script tag
     #Will Run!
     #So npm coverage could go here...
-   package-json-script:
+  package-json-script:
+    docker:
+      - image: circleci/node:8.9
+    steps:
       - checkout
-      - run: echo "script"
+      - run: echo "hello package-json-script"
 workflows:
   version: 2
   build_test_and_lint:
